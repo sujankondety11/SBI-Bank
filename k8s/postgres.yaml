@@ -22,7 +22,7 @@ metadata:
   name: postgres-pvc
   namespace: securebank
 spec:
-  storageClassName: gp2
+  storageClassName: gp3
   accessModes:
     - ReadWriteOnce
   resources:

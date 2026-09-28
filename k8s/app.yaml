@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: securebank-app
-          image: 379367335704.dkr.ecr.ap-south-1.amazonaws.com/securebank-app:latest
+          image: 298536392649.dkr.ecr.ap-south-1.amazonaws.com/securebank-app:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

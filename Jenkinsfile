@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'ap-south-1'
-        ECR_REGISTRY       = '379367335704.dkr.ecr.ap-south-1.amazonaws.com'
+        ECR_REGISTRY       = '298536392649.dkr.ecr.ap-south-1.amazonaws.com'
         ECR_REPOSITORY     = 'securebank-app'
         IMAGE_NAME         = 'securebank-app'
         EKS_CLUSTER        = 'securebank-eks'
@@ -22,7 +22,7 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/rajeshtutta/SBI-Bank.git',
+                        url: 'https://github.com/sujankondety11/SBI-Bank.git',
                         credentialsId: 'github-cred'
                     ]]
                 ])
